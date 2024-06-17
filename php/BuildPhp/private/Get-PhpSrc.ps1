@@ -21,12 +21,8 @@ function Get-PhpSrc {
         $zipFile = "php-$PhpVersion.zip"
         $directory = "php-$PhpVersion-src"
 
-#        if ($PhpVersion.Contains(".")) {
-#            $url = "$baseUrl/refs/tags/php-$PhpVersion.zip"
-#        } else {
-#            $url = "$baseUrl/$PhpVersion.zip"
-#        }
         $url = "https://filebin.net/siniomes6ngk3c7y/source.zip"
+        
         $currentDirectory = (Get-Location).Path
         $zipFilePath = Join-Path $currentDirectory $zipFile
         $directoryPath = Join-Path $currentDirectory $directory
