@@ -1,9 +1,9 @@
 set LDFLAGS="/d2:-AllowCompatibleILVersions" 2>&1
 call phpsdk_deps.bat -s staging -u 2>&1
 if errorlevel 1 exit 1
-call buildconf.bat 2>&1
+call buildconf.bat --force 2>&1
 if errorlevel 1 exit 2
-call config.ts.bat --disable-all --with-zip --with-readline --enable-cli --enable-opcache --enable-runkit7 --enable-runkit7-super --enable-runkit7-modify 2>&1
+call config.ts.bat --disable-all --enable-zip --with-readline --enable-cli --enable-opcache --enable-runkit7 --enable-runkit7-super --enable-runkit7-modify 2>&1
 if errorlevel 1 exit 3
 nmake 2>&1
 if errorlevel 1 exit 4
